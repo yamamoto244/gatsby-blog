@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["dom", "es2015", "es2017"],
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["./src/*"],
+      "~root/*": ["./*"]
+    },
+    "types": [
+      "node",
+      "jest",
+      "@emotion/react/types/css-prop"
+    ],
+    "sourceMap": true,
+    "removeComments": false,
+    "noEmit": true,
+    "preserveConstEnums": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "skipLibCheck": true
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "public", ".cache", "static"]
+}
